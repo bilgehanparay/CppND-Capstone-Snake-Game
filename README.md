@@ -3,11 +3,19 @@
 This is a simple C++ snake game in SDL API with following features:
 - Snake gets bigger by eating food
 - Speed is gradually increased
-- Snake gets bigger by x3 normal food by taking a super food
-- Snake dies immediately after taking a bad fod
-- Game speed is tripled by 4 seconds if snake takes a trap
-- Trap/super food and bad food appears for 3 seconds
-- Intervals between trap/super food and bad food is random with 1 to 10 seconds
+- Power-ups:
+  - Speed Boost: Speed is x3 for 4 seconds
+  - Immortal: Snake is immortal for 4 seconds
+  - Reverse : Snake controls are reversed for 4 seconds
+  - Super Food: x3 normal food
+  - Smaller   : Snake Size reduced by by half
+  - Magnetic  : Foods move toward snake head
+- Obstacles:
+  - Snake dies immediately taking obstacle
+- Power Ups Obstacles and Foods shall appear independently
+- PowerUp timeouts 5 seconds, intervals random at 5-15 seconds
+- Obstacles timeouts 5 seconds, intervals 5-15 seconds
+- Foods does not timeout, new one appear when eaten
 
 <img src="snake_game.gif"/>
 
